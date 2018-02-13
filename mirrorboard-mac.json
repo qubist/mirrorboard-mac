@@ -2,7 +2,7 @@
   "title": "mirrorboard-mac",
   "rules": [
       {
-          "description": "mirrorboard-mac (one-handed layout). Hold spacebar to mirror the layout.",
+          "description": "A one-handed layout keyboard layout. Hold spacebar to mirror the keyboard layout so that both sides of the keyboard can be intuitively typed by either hand on its own.",
           "manipulators": [
               {
                   "from": {
@@ -44,6 +44,26 @@
                   ],
                   "type": "basic"
               },
+              {
+                  "from": {
+                      "key_code": "grave_accent_and_tilde",
+                      "modifiers": {
+                          "mandatory": [
+                              "right_control"
+                          ],
+                          "optional": [
+                              "any"
+                          ]
+                      }
+                  },
+                  "to": [
+                      {
+                          "key_code": "delete_or_backspace"
+                      }
+                  ],
+                  "type": "basic"
+              },
+
               {
                   "from": {
                       "key_code": "1",
@@ -704,7 +724,26 @@
                   },
                   "to": [
                       {
-                          "key_code": "delete_or_backspace"
+                          "key_code": "caps_lock"
+                      }
+                  ],
+                  "type": "basic"
+              },
+              {
+                  "from": {
+                      "key_code": "caps_lock",
+                      "modifiers": {
+                          "mandatory": [
+                              "right_control"
+                          ],
+                          "optional": [
+                              "any"
+                          ]
+                      }
+                  },
+                  "to": [
+                      {
+                          "key_code": "return_or_enter"
                       }
                   ],
                   "type": "basic"
