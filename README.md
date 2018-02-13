@@ -8,7 +8,8 @@ Karabiner-Elements powers this. It's a wonderful piece of software that's comple
 
 ### Installation
 1. Download and install [Karabiner-Elements](https://pqrs.org/osx/karabiner/)
-2. Use [this link](karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/qubist/mirrorboard-mac/raw/master/mirrorboard-mac.json) to import the mirrorboard-mac complex modification into karabiner. You can also download [the JSON file of the complex modification from this repo](mirrorboard-mac.json) and import it manually by adding it to `~/.config/karabiner/assets/complex_modifications`
+2. Open this URL in your browser to import the mirrorboard-mac complex modification into karabiner: `karabiner://karabiner/assets/complex_modifications/import?url=github.com/qubist/mirrorboard-mac/raw/master/mirrorboard-mac.json`
+ You can also download [the JSON file of the complex modification from this repo](mirrorboard-mac.json) and import it manually by adding it to `~/.config/karabiner/assets/complex_modifications`
 3. Open the Karabiner-Elements Preferences window, and enable (or add and enable) the mirrorboard-mac rule in the Complex Modifications tab.
 
 Your keyboard should now be mirror-able! Test it out by holding the spacebar and typing something.
@@ -17,7 +18,7 @@ Your keyboard should now be mirror-able! Test it out by holding the spacebar and
 
 I found that having the spacebar output a space only on key-up was manageable, but awkward at times. Here's how to make a keyboard shortcut that could toggle the keyboard mirroring functionality on and off:
 
-1. In the Karabiner-Elements Preferences window, Remove the mirrorboard-mac modification we added in step 3 of Installation. Don't worry, it'll still be installed, it's just no longer enabled. We'll add it back soon enough.
+1. In the Karabiner-Elements Preferences window, Remove the mirrorboard-mac modification we added in step 3 of [Installation](#installation). Don't worry, it'll still be installed, it's just no longer enabled. We'll add it back soon enough.
 2. Go to the Misc tab and turn the "Show profile name in menu bar" option on. (Strictly you don't need to do this, but it will be how we can see whether mirroring is on or off.)
 3. Next, we need to create two profiles that we can switch between to enable and disable mirroring.
 
@@ -30,7 +31,7 @@ I found that having the spacebar output a space only on key-up was manageable, b
 
 5. We want a keyboard shortcut that can toggle between our two profiles. To do this, we need to create an Automator automation. Open Automator and create a new automation: File &gt; New. Then add the action "Run Shell Script". Select `/usr/bin/perl` in the list of Shells and then enter [this Perl script](toggle_profiles.pl) into the text field. Then replace all the all-caps sections starting with `YOUR_` with your own data.
 
-6. Test if this is working by hitting Run. **This should toggle between your profiles!**
+6. Test if this is working by hitting Run. **This should toggle between your profiles!** Save it if it's working.
 
 7. Now go into System Preferences &gt; Shortcuts &gt; Services. If you scroll to near the bottom, you should see the Automation you just made as an item there. Select it and add a shortcut of your choosing.
 
