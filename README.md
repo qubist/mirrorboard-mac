@@ -1,12 +1,25 @@
 # mirrorboard-mac
-Intuitive one-handed typing on macOS by mirroring the keyboard while spacebar is held
 
-### About
+[![GitHub license](https://img.shields.io/github/license/qubist/mirrorboard-mac.svg)](https://github.com/qubist/mirrorboard-mac/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/qubist/mirrorboard-mac.svg)](https://github.com/qubist/mirrorboard-mac/stargazers)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/qubist/mirrorboard-mac.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fqubist%2Fmirrorboard-mac)
+
+> Intuitive one-handed typing on macOS by mirroring the keyboard while spacebar is held
+
+## Table of Contents
+
+* [Background](#background)
+* [Install](#install)
+  * [Extra configuration](#extra-configuration)
+* [Usage](#usage)
+* [Notes](#notes)
+
+## Background
 Inspired by Randall Munroe of [xkcd](https://xkcd.com) and informed by many others across the internet, I've created an implementation of this concept for macOS.
 
 Karabiner-Elements powers this. It's a wonderful piece of software that's completely free, open source, and great for any type of keyboard modification you might want to do on a Mac.
 
-### Installation
+## Install
 1. Download and install [Karabiner-Elements](https://pqrs.org/osx/karabiner/)
 2. Open this URL in your browser to import the mirrorboard-mac complex modification into karabiner: `karabiner://karabiner/assets/complex_modifications/import?url=github.com/qubist/mirrorboard-mac/raw/master/mirrorboard-mac.json`
  You can also download [the JSON file of the complex modification from this repo](mirrorboard-mac.json) and import it manually by adding it to `~/.config/karabiner/assets/complex_modifications`
@@ -14,7 +27,7 @@ Karabiner-Elements powers this. It's a wonderful piece of software that's comple
 
 Your keyboard should now be mirror-able! Test it out by holding the spacebar and typing something.
 
-### Advanced configuration — making it toggle
+### Extra configuration
 
 I found that having the spacebar output a space only on key-up was manageable, but awkward at times. Here's how to make a keyboard shortcut that could toggle the keyboard mirroring functionality on and off:
 
@@ -39,8 +52,20 @@ I found that having the spacebar output a space only on key-up was manageable, b
 
 9. Done! Your keyboard shortcut should now toggle between mirrorboard-mac being enabled and being disabled.
 
-### Notes
+## Usage
+
+Hold space while typing to mirror the keyboard.
+
+## Notes
 
 The keyboard layout in the Karabiner-Elements modification file is set up for ANSI keyboards. It should be easy to modify for ISO keyboards.
 
 It also should be compatible with many, many keyboard layouts like the ones you can choose from and switch between in System Preferences. For example, I use the Dvorak keyboard layout by adding the Dvorak Input Source in system preferences. With no modifications, this Karabiner-Elements modification still works for me. This is because Karabiner-Elements reads inputs, and modifies them, directly from the keyboard, before they are transformed by layouts you've applied through System Preferences (see this in action by switching to an alternate layout through System Preferences, opening Karabiner-EventViewer, and watching all your keystrokes match up with what's written on your keyboard).
+
+## Contribute 
+
+Pull requests are accepted.
+
+## License
+
+[MIT License](/LICENSE)
