@@ -42,11 +42,11 @@ I found that having the spacebar output a space only on key-up was manageable, b
 
  **At this stage, we can enable and disable keyboard mirroring by selecting between our two profiles from the display in the menu bar. But this isn't enough!**
 
-5. We want a keyboard shortcut that can toggle between our two profiles. To do this, we need to create an Automator automation. Open Automator and create a new automation: File &gt; New. Then add the action "Run Shell Script". Select `/usr/bin/perl` in the list of Shells and then enter [this Perl script](toggle_profiles.pl) into the text field. Then replace all the all-caps sections starting with `YOUR_` with your own data.
+5. We want a keyboard shortcut that can toggle between our two profiles. To do this, we need to create an Automator automation. Open Automator and create a new automation: File &gt; New. Choose "Service" and set Service recieves to "no input" in "any application". Then add the action "Run Shell Script". Select `/usr/bin/perl` in the list of Shells and then enter [this Perl script](toggle_profiles.pl) into the text field. Then replace all the all-caps sections starting with `YOUR_` with your own data.
 
 6. Test if this is working by hitting Run. **This should toggle between your profiles!** Save it if it's working.
 
-7. Now go into System Preferences &gt; Shortcuts &gt; Services. If you scroll to near the bottom, you should see the Automation you just made as an item there. Select it and add a shortcut of your choosing.
+7. Now go into System Preferences &gt; Keyboard &gt; Shortcuts &gt; Services. If you scroll to near the bottom, you should see the Automation you just made as an item there under the "General" heading. Select it and add a shortcut of your choosing.
 
 8. Go to System Preferences &gt; Security & Privacy &gt; Privacy and add Automator to the list of apps that are allowed to control your computer.
 
