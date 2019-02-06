@@ -21,7 +21,7 @@ Karabiner-Elements powers this. It's a wonderful piece of software that's comple
 
 ## Install
 1. Download and install [Karabiner-Elements](https://pqrs.org/osx/karabiner/)
-2. Open this URL in your browser to import the mirrorboard-mac complex modification into karabiner: `karabiner://karabiner/assets/complex_modifications/import?url=github.com/qubist/mirrorboard-mac/raw/master/mirrorboard-mac.json`
+2. Open this URL in your browser to import the mirrorboard-mac complex modification into karabiner: `karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/qubist/mirrorboard-mac/raw/master/mirrorboard-mac.json`
  You can also download [the JSON file of the complex modification](mirrorboard-mac.json) from this repo and import it manually by adding it to `~/.config/karabiner/assets/complex_modifications`
 3. Open the Karabiner-Elements Preferences window, and enable (or add and enable) the mirrorboard-mac rule in the Complex Modifications tab.
 
