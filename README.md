@@ -1,6 +1,6 @@
 # mirrorboard-mac
 
-[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-brightgreen.svg?style=flat)](https://github.com/RichardLitt/standard-readme)
+[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat)](https://github.com/RichardLitt/standard-readme)
 [![GitHub license](https://img.shields.io/github/license/qubist/mirrorboard-mac.svg)](https://github.com/qubist/mirrorboard-mac/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/qubist/mirrorboard-mac.svg)](https://github.com/qubist/mirrorboard-mac/stargazers)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/qubist/mirrorboard-mac.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fqubist%2Fmirrorboard-mac)
