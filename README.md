@@ -16,7 +16,7 @@
 * [Notes](#notes)
 
 ## Background
-Inspired by Randall Munroe of [xkcd](https://xkcd.com) and informed by many others across the internet, I've created an implementation of this concept for macOS.
+Inspired by Randall Munroe of [xkcd](https://blog.xkcd.com/2007/08/14/mirrorboard-a-one-handed-keyboard-layout-for-the-lazy/) and informed by many others across the internet, I've created an implementation of this concept for macOS.
 
 Karabiner-Elements powers this. It's a wonderful piece of software that's completely free, open source, and great for any type of keyboard modification you might want to do on a Mac.
 
