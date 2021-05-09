@@ -5,7 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/qubist/mirrorboard-mac.svg)](https://github.com/qubist/mirrorboard-mac/stargazers)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/qubist/mirrorboard-mac.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fqubist%2Fmirrorboard-mac)
 
-> Intuitive one-handed typing on macOS by mirroring the keyboard while spacebar is held
+Intuitive one-handed typing on macOS by mirroring the keyboard while spacebar is held
 
 ## Table of Contents
 
