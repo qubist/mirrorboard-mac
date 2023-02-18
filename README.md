@@ -39,6 +39,7 @@ I found that having the spacebar output a space only on key-up was manageable, b
  If you're only using Karabiner-Elements for this, go to the Profile tab and create a new profile.
 
  If you also use Karabiner-Elements for things besides mirrorboard-mac, you'll need to duplicate your profile so you don't lose your other modifications when switching mirroring on and off. There's no way to do this in the GUI, so you'll have to open the file karabiner.json in `~/.config/karabiner/` and copy-and-paste to duplicate the the item inside the first set of curly braces after `"profiles":` **Now you should have two profiles that are exactly the same, either empty or both containing duplicate copies of your pre-existing Karabiner-Elements configuration.** Name one "Mirroring" and one "Default" or something like that. I have mine named "␣●" and "␣○" so that they take up less space on my menu bar.
+
 4. Now, add the mirrorboard-mac modification back to one of your profiles.
 
  **At this stage, we can enable and disable keyboard mirroring by selecting between our two profiles from the display in the menu bar. But this isn't enough!**
