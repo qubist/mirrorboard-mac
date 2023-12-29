@@ -22,8 +22,10 @@ Karabiner-Elements powers this. It's a wonderful piece of software that's comple
 
 ## Install
 1. Download and install [Karabiner-Elements](https://pqrs.org/osx/karabiner/)
-2. Open this URL in your browser to import the mirrorboard-mac complex modification into karabiner: `karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/qubist/mirrorboard-mac/raw/master/mirrorboard-mac.json`
- You can also download [the JSON file of the complex modification](mirrorboard-mac.json) from this repo and import it manually by adding it to `~/.config/karabiner/assets/complex_modifications`
+2. Open this URL in your browser to import the mirrorboard-mac complex modification into karabiner  
+ **ANSI:** `karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/qubist/mirrorboard-mac/raw/master/mirrorboard-mac_ANSI.json`  
+ **ISO:** `karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/qubist/mirrorboard-mac/raw/master/mirrorboard-mac_ISO.json`  
+ You can also download the JSON file of the complex modification ([mirrorboard-mac_ANSI.json](mirrorboard-mac_ANSI.json) or [mirrorboard-mac_ISO.json](mirrorboard-mac_ISO.json)) from this repo and import it manually by adding it to `~/.config/karabiner/assets/complex_modifications`
 3. Open the Karabiner-Elements Preferences window, and enable (or add and enable) the mirrorboard-mac rule in the Complex Modifications tab.
 
 Your keyboard should now be mirror-able! Test it out by holding the spacebar and typing something.
@@ -59,8 +61,6 @@ I found that having the spacebar output a space only on key-up was manageable, b
 Hold space while typing to mirror the keyboard.
 
 ## Notes
-
-The keyboard layout in the Karabiner-Elements modification file is set up for ANSI keyboards. It should be easy to modify for ISO keyboards.
 
 It also should be compatible with many, many keyboard layouts like the ones you can choose from and switch between in System Preferences. For example, I use the Dvorak keyboard layout by adding the Dvorak Input Source in system preferences. With no modifications, this Karabiner-Elements modification still works for me. This is because Karabiner-Elements reads inputs, and modifies them, directly from the keyboard, before they are transformed by layouts you've applied through System Preferences (see this in action by switching to an alternate layout through System Preferences, opening Karabiner-EventViewer, and watching all your keystrokes match up with what's written on your keyboard).
 

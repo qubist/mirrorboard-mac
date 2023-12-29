@@ -1,8 +1,8 @@
 {
-  "title": "mirrorboard-mac",
+  "title": "mirrorboard-mac_ISO",
   "rules": [
     {
-      "description": "A one-handed layout keyboard layout. Hold spacebar to mirror the keyboard layout so that both sides of the keyboard can be intuitively typed by either hand on its own.",
+      "description": "A one-handed keyboard layout. Hold spacebar to mirror the keyboard layout so that both sides of the keyboard can be intuitively typed by either hand on its own.",
       "manipulators": [
         {
           "from": {
@@ -43,7 +43,7 @@
           },
           "to": [
             {
-              "key_code": "grave_accent_and_tilde"
+              "key_code": "non_us_backslash"
             }
           ],
           "conditions": [
@@ -57,7 +57,7 @@
         },
         {
           "from": {
-            "key_code": "grave_accent_and_tilde",
+            "key_code": "non_us_backslash",
             "modifiers": {
               "optional": ["any"]
             }
@@ -76,7 +76,6 @@
           ],
           "type": "basic"
         },
-
         {
           "from": {
             "key_code": "1",
@@ -289,27 +288,6 @@
         },
         {
           "from": {
-            "key_code": "equal_sign",
-            "modifiers": {
-              "optional": ["any"]
-            }
-          },
-          "to": [
-            {
-              "key_code": "1"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "mirror",
-              "value": 1
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
             "key_code": "hyphen",
             "modifiers": {
               "optional": ["any"]
@@ -331,14 +309,14 @@
         },
         {
           "from": {
-            "key_code": "tab",
+            "key_code": "equal_sign",
             "modifiers": {
               "optional": ["any"]
             }
           },
           "to": [
             {
-              "key_code": "open_bracket"
+              "key_code": "1"
             }
           ],
           "conditions": [
@@ -359,7 +337,7 @@
           },
           "to": [
             {
-              "key_code": "p"
+              "key_code": "close_bracket"
             }
           ],
           "conditions": [
@@ -380,7 +358,7 @@
           },
           "to": [
             {
-              "key_code": "o"
+              "key_code": "open_bracket"
             }
           ],
           "conditions": [
@@ -401,7 +379,7 @@
           },
           "to": [
             {
-              "key_code": "i"
+              "key_code": "p"
             }
           ],
           "conditions": [
@@ -422,7 +400,7 @@
           },
           "to": [
             {
-              "key_code": "u"
+              "key_code": "o"
             }
           ],
           "conditions": [
@@ -443,7 +421,7 @@
           },
           "to": [
             {
-              "key_code": "y"
+              "key_code": "i"
             }
           ],
           "conditions": [
@@ -464,7 +442,7 @@
           },
           "to": [
             {
-              "key_code": "t"
+              "key_code": "u"
             }
           ],
           "conditions": [
@@ -485,7 +463,7 @@
           },
           "to": [
             {
-              "key_code": "r"
+              "key_code": "y"
             }
           ],
           "conditions": [
@@ -506,7 +484,7 @@
           },
           "to": [
             {
-              "key_code": "e"
+              "key_code": "t"
             }
           ],
           "conditions": [
@@ -527,7 +505,7 @@
           },
           "to": [
             {
-              "key_code": "w"
+              "key_code": "r"
             }
           ],
           "conditions": [
@@ -548,7 +526,7 @@
           },
           "to": [
             {
-              "key_code": "q"
+              "key_code": "e"
             }
           ],
           "conditions": [
@@ -569,7 +547,28 @@
           },
           "to": [
             {
-              "key_code": "tab"
+              "key_code": "w"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "mirror",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "q"
             }
           ],
           "conditions": [
@@ -590,7 +589,7 @@
           },
           "to": [
             {
-              "key_code": "semicolon"
+              "key_code": "backslash"
             }
           ],
           "conditions": [
@@ -611,7 +610,7 @@
           },
           "to": [
             {
-              "key_code": "l"
+              "key_code": "quote"
             }
           ],
           "conditions": [
@@ -632,7 +631,7 @@
           },
           "to": [
             {
-              "key_code": "k"
+              "key_code": "semicolon"
             }
           ],
           "conditions": [
@@ -653,7 +652,7 @@
           },
           "to": [
             {
-              "key_code": "j"
+              "key_code": "l"
             }
           ],
           "conditions": [
@@ -674,7 +673,7 @@
           },
           "to": [
             {
-              "key_code": "h"
+              "key_code": "k"
             }
           ],
           "conditions": [
@@ -695,7 +694,7 @@
           },
           "to": [
             {
-              "key_code": "g"
+              "key_code": "j"
             }
           ],
           "conditions": [
@@ -716,7 +715,7 @@
           },
           "to": [
             {
-              "key_code": "f"
+              "key_code": "h"
             }
           ],
           "conditions": [
@@ -737,7 +736,7 @@
           },
           "to": [
             {
-              "key_code": "d"
+              "key_code": "g"
             }
           ],
           "conditions": [
@@ -758,7 +757,7 @@
           },
           "to": [
             {
-              "key_code": "s"
+              "key_code": "f"
             }
           ],
           "conditions": [
@@ -773,6 +772,48 @@
         {
           "from": {
             "key_code": "semicolon",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "mirror",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "s"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "mirror",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "backslash",
             "modifiers": {
               "optional": ["any"]
             }
@@ -800,7 +841,7 @@
           },
           "to": [
             {
-              "key_code": "caps_lock"
+              "key_code": "tab"
             }
           ],
           "conditions": [
@@ -835,7 +876,7 @@
         },
         {
           "from": {
-            "key_code": "z",
+            "key_code": "grave_accent_and_tilde",
             "modifiers": {
               "optional": ["any"]
             }
@@ -856,7 +897,7 @@
         },
         {
           "from": {
-            "key_code": "x",
+            "key_code": "z",
             "modifiers": {
               "optional": ["any"]
             }
@@ -877,7 +918,7 @@
         },
         {
           "from": {
-            "key_code": "c",
+            "key_code": "x",
             "modifiers": {
               "optional": ["any"]
             }
@@ -898,7 +939,7 @@
         },
         {
           "from": {
-            "key_code": "v",
+            "key_code": "c",
             "modifiers": {
               "optional": ["any"]
             }
@@ -919,7 +960,7 @@
         },
         {
           "from": {
-            "key_code": "b",
+            "key_code": "v",
             "modifiers": {
               "optional": ["any"]
             }
@@ -940,7 +981,7 @@
         },
         {
           "from": {
-            "key_code": "n",
+            "key_code": "b",
             "modifiers": {
               "optional": ["any"]
             }
@@ -961,7 +1002,7 @@
         },
         {
           "from": {
-            "key_code": "m",
+            "key_code": "n",
             "modifiers": {
               "optional": ["any"]
             }
@@ -982,14 +1023,14 @@
         },
         {
           "from": {
-            "key_code": "comma",
+            "key_code": "m",
             "modifiers": {
               "optional": ["any"]
             }
           },
           "to": [
             {
-              "key_code": "c"
+              "key_code": "o"
             }
           ],
           "conditions": [
@@ -1003,7 +1044,7 @@
         },
         {
           "from": {
-            "key_code": "period",
+            "key_code": "comma",
             "modifiers": {
               "optional": ["any"]
             }
@@ -1024,7 +1065,7 @@
         },
         {
           "from": {
-            "key_code": "slash",
+            "key_code": "period",
             "modifiers": {
               "optional": ["any"]
             }
@@ -1032,6 +1073,27 @@
           "to": [
             {
               "key_code": "z"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "mirror",
+              "value": 1
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "slash",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "grave_accent_and_tilde"
             }
           ],
           "conditions": [
