@@ -1,9 +1,8 @@
 # mirrorboard-mac
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat)](https://github.com/RichardLitt/standard-readme)
-[![GitHub license](https://img.shields.io/github/license/qubist/mirrorboard-mac.svg)](https://github.com/qubist/mirrorboard-mac/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/qubist/mirrorboard-mac.svg)](https://github.com/qubist/mirrorboard-mac/stargazers)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/qubist/mirrorboard-mac.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fqubist%2Fmirrorboard-mac)
+[![GitHub license](https://img.shields.io/github/license/heebj/mirrorboard-mac.svg)](https://github.com/heebj/mirrorboard-mac/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/heebj/mirrorboard-mac.svg)](https://github.com/heebj/mirrorboard-mac/stargazers)
 
 Intuitive one-handed typing on macOS by mirroring the keyboard while spacebar is held
 
@@ -16,6 +15,8 @@ Intuitive one-handed typing on macOS by mirroring the keyboard while spacebar is
 * [Notes](#notes)
 
 ## Background
+This is a fork of Will Harris-Braun's [mirrorboard-mac](https://github.com/qubist/mirrorboard-mac) project which has been extended with a layout configuration for ISO keyboards.
+
 Inspired by Randall Munroe of [xkcd](https://blog.xkcd.com/2007/08/14/mirrorboard-a-one-handed-keyboard-layout-for-the-lazy/) and informed by many others across the internet, I've created an implementation of this concept for macOS.
 
 Karabiner-Elements powers this. It's a wonderful piece of software that's completely free, open source, and great for any type of keyboard modification you might want to do on a Mac.
@@ -23,8 +24,8 @@ Karabiner-Elements powers this. It's a wonderful piece of software that's comple
 ## Install
 1. Download and install [Karabiner-Elements](https://pqrs.org/osx/karabiner/)
 2. Open this URL in your browser to import the mirrorboard-mac complex modification into karabiner  
- **ANSI:** `karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/qubist/mirrorboard-mac/raw/master/mirrorboard-mac_ANSI.json`  
- **ISO:** `karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/qubist/mirrorboard-mac/raw/master/mirrorboard-mac_ISO.json`  
+ **ANSI:** `karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/heebj/mirrorboard-mac/raw/master/mirrorboard-mac_ANSI.json`  
+ **ISO:** `karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/heebj/mirrorboard-mac/raw/master/mirrorboard-mac_ISO.json`  
  You can also download the JSON file of the complex modification ([mirrorboard-mac_ANSI.json](mirrorboard-mac_ANSI.json) or [mirrorboard-mac_ISO.json](mirrorboard-mac_ISO.json)) from this repo and import it manually by adding it to `~/.config/karabiner/assets/complex_modifications`
 3. Open the Karabiner-Elements Preferences window, and enable (or add and enable) the mirrorboard-mac rule in the Complex Modifications tab.
 
